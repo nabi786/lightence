@@ -6,6 +6,7 @@ import { HeaderSearch } from '../components/HeaderSearch/HeaderSearch';
 import { SettingsDropdown } from '../components/settingsDropdown/SettingsDropdown';
 import * as S from '../Header.styles';
 import Button from '@mui/material/Button';
+import ConnetWalletModel from '../components/walletModel'
 
 
 interface MobileHeaderProps {
@@ -24,7 +25,7 @@ export const MobileHeader: React.FC<MobileHeaderProps> = ({ toggleSider, isSider
         <Row align="middle">
           <Col>
             {/* <NotificationsDropdown /> */}
-            <Button>
+            <Button sx={{color : "white"}}>
                             Buy
             </Button>  
           </Col>
@@ -34,7 +35,8 @@ export const MobileHeader: React.FC<MobileHeaderProps> = ({ toggleSider, isSider
           </Col>
 
           <Col>
-            <ProfileDropdown/>
+            <ProfileDropdown />
+            <ConnetWalletModel />
           </Col>
         </Row>
       </Col>

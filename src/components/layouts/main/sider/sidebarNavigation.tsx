@@ -26,18 +26,13 @@ export interface SidebarNavigationItem {
 
 export const sidebarNavigation: SidebarNavigationItem[] = [
   {
-    title: 'common.nft-dashboard',
+    title: 'Dashboard',
     key: 'nft-dashboard',
     // TODO use path variable
     url: '/',
-    icon: <NftIcon />,
-  },
-  {
-    title: 'common.medical-dashboard',
-    key: 'medical-dashboard',
-    url: '/medical-dashboard',
     icon: <DashboardOutlined />,
   },
+
   {
     title: 'common.apps',
     key: 'apps',
@@ -54,6 +49,12 @@ export const sidebarNavigation: SidebarNavigationItem[] = [
         url: '/apps/kanban',
       },
     ],
+  },
+  {
+    title: 'Chart',
+    key: 'medical-dashboard',
+    url: '/medical-dashboard',
+    icon: <NftIcon />,
   },
   {
     title: 'common.authPages',

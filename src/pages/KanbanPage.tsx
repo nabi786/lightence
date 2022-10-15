@@ -9,7 +9,7 @@ const KanbanPage: React.FC = () => {
   return (
     <>
       <PageTitle>{t('common.kanban')}</PageTitle>
-      <Kanban />
+      {/* <Kanban /> */}
     </>
   );
 };

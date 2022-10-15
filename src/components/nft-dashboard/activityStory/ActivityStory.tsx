@@ -18,7 +18,7 @@ export const ActivityStory: React.FC = () => {
     () =>
       story.map((item, index) => (
         <Col key={index} span={24}>
-          <ActivityStoryItem {...item} />
+          {/* <ActivityStoryItem {...item} /> */}
         </Col>
       )),
     [story],
@@ -27,7 +27,7 @@ export const ActivityStory: React.FC = () => {
   return (
     <S.Wrapper>
       <S.Title level={2}>{t('nft.activityStory')}</S.Title>
-      <S.ActivityRow gutter={[26, 26]}>{activityStory}</S.ActivityRow>
+      {/* <S.ActivityRow gutter={[26, 26]}>{activityStory}</S.ActivityRow> */}
     </S.Wrapper>
   );
 };

@@ -9,7 +9,7 @@ const NewsFeedPage: React.FC = () => {
   return (
     <>
       <PageTitle>{t('common.feed')}</PageTitle>
-      <NewsFeed />
+      {/* <NewsFeed /> */}
     </>
   );
 };

@@ -37,31 +37,31 @@ const MedicalDashboardPage: React.FC = () => {
           </Col>
 
           <Col id="latest-screenings" span={24}>
-            <ScreeningsCard />
+            {/* <ScreeningsCard /> */}
           </Col>
 
           <Col id="treatment-plan" xl={24}>
-            <TreatmentCard />
+            {/* <TreatmentCard /> */}
           </Col>
 
           <Col id="covid" xl={24}>
-            <CovidCard />
+            {/* <CovidCard /> */}
           </Col>
 
           <Col id="activity" xl={24} xxl={12}>
-            <ActivityCard />
+            {/* <ActivityCard /> */}
           </Col>
 
           <Col id="health" xl={24} xxl={12}>
-            <HealthCard />
+            {/* <HealthCard /> */}
           </Col>
 
           <Col id="favorite-doctors" xl={24}>
-            <FavoritesDoctorsCard />
+            {/* <FavoritesDoctorsCard /> */}
           </Col>
 
           <Col id="news" span={24}>
-            <NewsCard />
+            {/* <NewsCard /> */}
           </Col>
         </Row>
         <References />
@@ -122,7 +122,7 @@ const MedicalDashboardPage: React.FC = () => {
       </Col>
 
       <Col id="news" xs={24} md={24} order={(isTablet && 14) || 0}>
-        <NewsCard />
+        {/* <NewsCard /> */}
       </Col>
     </Row>
   );

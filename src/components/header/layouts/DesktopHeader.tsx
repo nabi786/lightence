@@ -6,6 +6,9 @@ import { HeaderSearch } from '../components/HeaderSearch/HeaderSearch';
 import { SettingsDropdown } from '../components/settingsDropdown/SettingsDropdown';
 import { HeaderFullscreen } from '../components/HeaderFullscreen/HeaderFullscreen';
 import AddIcon from '@mui/icons-material/Add';
+import ConnetWalletModel from '../components/walletModel'
+
+
 import Button from '@mui/material/Button';
 
 
@@ -28,7 +31,7 @@ export const DesktopHeader: React.FC<DesktopHeaderProps> = ({ isTwoColumnsLayout
         <Col>
           {/* <S.GHButton /> */}
           <Button sx={{ color : "white"}}>
-          Token Price 1920
+              Token Price $3,040.51
           </Button>   
 
           
@@ -57,7 +60,7 @@ export const DesktopHeader: React.FC<DesktopHeaderProps> = ({ isTwoColumnsLayout
               <Col style={{marginRight:'20px'}}>
 
                 
-                    <Button>
+                    <Button sx={{color : "white"}} className="buyHeaderTokenBtn">
                             Buy
                     </Button>  
               </Col>
@@ -68,13 +71,15 @@ export const DesktopHeader: React.FC<DesktopHeaderProps> = ({ isTwoColumnsLayout
               </Col>
 
               <Col style={{display : "flex", justifyContent : 'center'}}>
-                <ProfileDropdown />
+                {/* <ProfileDropdown /> */}
               </Col>
             </Row>
           </Col>
 
           <Col>
-            <HeaderFullscreen />
+            {/* <HeaderFullscreen /> */}
+              <ProfileDropdown />
+              <ConnetWalletModel />
           </Col>
         </Row>
       </S.ProfileColumn>
