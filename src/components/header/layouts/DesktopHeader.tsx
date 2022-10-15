@@ -6,7 +6,7 @@ import { HeaderSearch } from '../components/HeaderSearch/HeaderSearch';
 import { SettingsDropdown } from '../components/settingsDropdown/SettingsDropdown';
 import { HeaderFullscreen } from '../components/HeaderFullscreen/HeaderFullscreen';
 import AddIcon from '@mui/icons-material/Add';
-import ConnetWalletModel from '../components/walletModel'
+import ConnetWalletModel from '../components/WalletModel'
 
 
 import Button from '@mui/material/Button';
@@ -79,7 +79,7 @@ export const DesktopHeader: React.FC<DesktopHeaderProps> = ({ isTwoColumnsLayout
           <Col>
             {/* <HeaderFullscreen /> */}
               <ProfileDropdown />
-              <ConnetWalletModel />
+              {/* <ConnetWalletModel /> */}
           </Col>
         </Row>
       </S.ProfileColumn>

@@ -13,6 +13,11 @@ import { useThemeWatcher } from './hooks/useThemeWatcher';
 import { useAppSelector } from './hooks/reduxHooks';
 import { themeObject } from './styles/themes/themeVariables';
 
+import { useState } from 'react';
+
+import myContextAPI from './components/context/myContext'
+
+
 const App: React.FC = () => {
   const { language } = useLanguage();
   const theme = useAppSelector((state) => state.theme.theme);
@@ -23,12 +28,24 @@ const App: React.FC = () => {
 
   useThemeWatcher();
 
+
+
+
+
+
+
+
+
   return (
     <>
       <meta name="theme-color" content={themeObject[theme].primary} />
       <GlobalStyle />
       <ConfigProvider locale={language === 'en' ? enUS : deDe}>
-        <AppRouter />
+
+
+            <AppRouter />
+
+
       </ConfigProvider>
     </>
   );

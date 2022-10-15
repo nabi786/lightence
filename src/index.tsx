@@ -8,6 +8,9 @@ import { store } from '@app/store/store';
 import ReactDOM from 'react-dom';
 import React from 'react';
 
+import './external.css'
+
+
 interface EventTarget {
   state?: 'activated';
 }
